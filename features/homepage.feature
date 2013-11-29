@@ -1,9 +1,9 @@
 Feature: Homepage
-	In order to navigate through the website
-	As a user who wants to see restaurant reviews
-	I want to be on the homepage and sign up or login
+	In order to find good restaurants
+	As a user who wants to see reviews
+	I want to be on the homepage and see a list of restaurants and their rating
 
 	Scenario: Being on the homepage
 			Given I am on the homepage
-			Then I should see "Sign Up"
-			And I should see "Login"
+			Then I should see "Reviewed Restaurants" within "[@class='list_title']"
+			And I should see "Rating" within "[@class='ave_rating']"

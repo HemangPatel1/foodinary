@@ -13,8 +13,8 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
     
-    # when /the sign\s?up\s?page/
-    #   '/users/sign_up'
+    when /the new\s?restaurant\s?page/
+      '/restaurants/new'
 
     # when /the login\s?page/
     #   '/users/sign_in'

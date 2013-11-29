@@ -4,8 +4,8 @@ Feature: Editing a restaurant profile
 	I want to be able to update the title or description of the restaurant
 
 	Background:
-		Given I am on the new restaurant page
-		When I fill in the form
+		Given a restaurant profile already exists
+		And I am on a restaurants profile page
 
 	Scenario: Editing restaurant profile
 			Given I follow "Edit Restaurant Profile"

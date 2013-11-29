@@ -16,6 +16,9 @@ module NavigationHelpers
     when /the new\s?restaurant\s?page/
       '/restaurants/new'
 
+    when /a restaurants\s?profile\s?page/
+      restaurant_path(Restaurant.find_by($1))
+
     # when /the login\s?page/
     #   '/users/sign_in'
 

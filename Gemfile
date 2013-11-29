@@ -7,6 +7,7 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'shoulda-matchers'
+  gem 'webrat'
 end
 
 gem 'thin'

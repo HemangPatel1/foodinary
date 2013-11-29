@@ -4,3 +4,8 @@
 
 <%= link_to 'Back', :back %>
 <%= link_to 'Home', root_path %>
+
+<footer>
+<%= link_to 'Delete Restaurant Profile', restaurant_path(@restaurant),
+                    method: :delete, data: { confirm: 'Are you sure?' } %>
+</footer>

@@ -34,6 +34,13 @@ class RestaurantsController < ApplicationController
   	end
   end
 
+  def destroy
+  	@restaurant = Restaurant.find(params[:id])
+  	@restaurant.destroy
+  	flash[:notice] = "Success: Restaurant Has Been Deleted"
+  	redirect_to root_path
+  end
+
 
   private
 

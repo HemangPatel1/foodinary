@@ -5,9 +5,16 @@
 
 <% @restaurants.each do |restaurant| %>
 	<article>
-		<p class="restaurant_name">Restaurant name: <%= restaurant.name %></p>
-		<p class="restaurant_description">Description: <%= restaurant.description %></p>
-		<p class="avg_rating">Rating <%= image_tag("5star.png", :alt => "five stars") %></p>
+		<p class="restaurant_name">
+			Restaurant name: 
+			<a href="<%= restaurant_path(restaurant) %>"><%= restaurant.name %></a>
+		</p>
+		<p class="restaurant_description">
+			Description: <%= restaurant.description %>
+		</p>
+		<p class="avg_rating">
+			Rating <%= image_tag("5star.png", :alt => "five stars") %>
+		</p>
 	<article>
 	<br>
 <% end %>

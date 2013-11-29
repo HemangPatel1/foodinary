@@ -13,4 +13,7 @@ Feature: Viewing all restuarants on the homepage
 			And I should see "Grease in a bun... but you'll love it!" within "[@class='restaurant_description']"
 			And I should see "Rating" within "[@class='avg_rating']"
 
+	Scenario: Clicking on a restaurant to see its profile page
+			Given I follow "Rotary"
+			Then I should see "Edit Restaurant Profile"
 

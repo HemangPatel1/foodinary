@@ -1,8 +1,12 @@
-<%= link_to 'Home', root_path %>
+<%= link_to 'Home', root_path %> | <%= link_to 'Edit Restaurant Profile', edit_restaurant_path %>
 <br><br><br>
 
 <p class="restaurant_name"><%= @restaurant.name %></p>
 <p class="restaurant_description"><%= @restaurant.description %></p>
 
+
 <br><br>
-<%= link_to 'Edit Restaurant Profile', edit_restaurant_path %>
+<container>
+<%= link_to 'Add Review', new_review_path %>
+
+</container>
